@@ -49,10 +49,16 @@ clientCards.forEach((card, index) => {
     card.style.transitionDelay = `${index * 0.15}s`;
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('⚠️ CONFIGURAR: Necesitas conectar este formulario con un servicio de email (Formspree, EmailJS, etc.)');
-});
+const params = new URLSearchParams(window.location.search);
+if (params.get('enviado') === '1') {
+    const form = document.getElementById('contactForm');
+    if (form) {
+        const notice = document.createElement('div');
+        notice.textContent = 'Mensaje enviado correctamente. Te responderemos a la brevedad.';
+        notice.style.cssText = 'margin-bottom:12px;padding:12px;border-radius:8px;background:#0ea5a5;color:#0f172a;font-weight:600;text-align:center;';
+        form.parentElement.insertBefore(notice, form);
+    }
+}
 
 const i18n = {
     es: {
