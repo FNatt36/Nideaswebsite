@@ -54,10 +54,26 @@ if (params.get('enviado') === '1') {
     const form = document.getElementById('contactForm');
     if (form) {
         const notice = document.createElement('div');
-        notice.textContent = 'Mensaje enviado correctamente. Te responderemos a la brevedad.';
+        const lang = localStorage.getItem('lang') || 'es';
+        notice.textContent = lang === 'es'
+            ? 'Mensaje enviado correctamente. Te responderemos a la brevedad.'
+            : 'Message sent successfully. We will get back to you shortly.';
         notice.style.cssText = 'margin-bottom:12px;padding:12px;border-radius:8px;background:#0ea5a5;color:#0f172a;font-weight:600;text-align:center;';
         form.parentElement.insertBefore(notice, form);
     }
+}
+
+const cf = document.getElementById('contactForm');
+if (cf) {
+    cf.addEventListener('submit', () => {
+        const lang = localStorage.getItem('lang') || 'es';
+        const auto = document.getElementById('autoResponse');
+        if (auto) {
+            auto.value = lang === 'es'
+                ? 'Gracias por contactarte con N ideas. Recibimos tu mensaje y te responderemos a la brevedad.'
+                : 'Thanks for contacting N ideas. We received your message and will reply shortly.';
+        }
+    });
 }
 
 const i18n = {
