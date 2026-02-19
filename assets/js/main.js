@@ -70,8 +70,8 @@ if (cf) {
         const auto = document.getElementById('autoResponse');
         if (auto) {
             auto.value = lang === 'es'
-                ? 'Gracias por contactarte con N ideas. Recibimos tu mensaje y te responderemos a la brevedad.'
-                : 'Thanks for contacting N ideas. We received your message and will reply shortly.';
+                ? 'Gracias por contactarte con NIDEAS. Recibimos tu mensaje y te responderemos a la brevedad.'
+                : 'Thanks for contacting NIDEAS. We received your message and will reply shortly.';
         }
     });
 }
@@ -110,11 +110,11 @@ const i18n = {
         'clients.subtitle': 'Empresas líderes que han fortalecido su seguridad con nuestras soluciones',
         'about.title': 'Sobre Nosotros',
         'about.subtitle': 'Un equipo multidisciplinario con pasión por la ciberseguridad',
-        'about.p1': 'Fundados en 2020, en N ideas somos un equipo multidisciplinario dedicado a transformar la ciberseguridad y el compliance de empresas en todo el mundo. Combinamos experiencia técnica profunda con un enfoque práctico y orientado al negocio.',
+        'about.p1': 'Fundados en 2020, en NIDEAS somos un equipo multidisciplinario con más de 15 años de experiencia acumulada en ciberseguridad y el compliance de empresas en todo el mundo. Combinamos experiencia técnica profunda con un enfoque práctico y orientado al negocio.',
         'about.p2': 'Nuestra misión es hacer que la seguridad de la información sea accesible, comprensible y efectiva. Más que cumplir estándares, construimos culturas de seguridad sostenibles que generen confianza y habiliten el crecimiento.',
         'stats.consultas': 'Consultorías Completadas',
         'stats.clientes': 'Clientes Satisfechos',
-        'stats.experiencia': 'Años de Experiencia',
+        'stats.experiencia': 'Años de Experiencia del Equipo',
         'stats.fundacion': 'Año de Fundación',
         'ceo.title': 'Fundador y CEO',
         'ceo.bio1': 'Arquitecto de Seguridad y especialista en DevSecOps con más de 10 años de experiencia en ERP y procesos críticos, 15+ años en sistemas Unix, 8+ años en administración de bases de datos y 15+ años en automatización. Experiencia liderando iniciativas de cumplimiento y preparación para auditorías SOC, ISO 27001 y marcos internacionales.',
@@ -132,7 +132,7 @@ const i18n = {
         'form.message': 'Mensaje',
         'form.submit': 'Enviar Mensaje',
         'footer.tagline': 'Ciberseguridad y Compliance | ISO 27001 | SOC 2 | DevSecOps',
-        'footer.copyright': '© 2025 N ideas. Todos los derechos reservados.'
+        'footer.copyright': '© 2025 NIDEAS. Todos los derechos reservados.'
     },
     en: {
         'nav.services': 'Services',
@@ -167,11 +167,11 @@ const i18n = {
         'clients.subtitle': 'Leading companies strengthening their security with our solutions',
         'about.title': 'About Us',
         'about.subtitle': 'A multidisciplinary team passionate about cybersecurity',
-        'about.p1': 'Founded in 2020, N ideas is a multidisciplinary team transforming cybersecurity and compliance worldwide, combining deep technical expertise with practical, business‑oriented execution.',
+        'about.p1': 'Founded in 2020, NIDEAS is a multidisciplinary team with 15+ years of combined experience in cybersecurity and compliance worldwide, combining deep technical expertise with practical, business‑oriented execution.',
         'about.p2': 'Our mission is to make information security accessible, understandable, and effective — building sustainable security cultures that enable growth.',
         'stats.consultas': 'Consultancies Completed',
         'stats.clientes': 'Satisfied Clients',
-        'stats.experiencia': 'Years of Experience',
+        'stats.experiencia': 'Years of Team Experience',
         'stats.fundacion': 'Year Founded',
         'ceo.title': 'Founder & CEO',
         'ceo.bio1': 'Security Architect and DevSecOps specialist with 10+ years in ERP and critical processes, 15+ years in Unix systems, 8+ in database administration, and 15+ in automation. Leads compliance readiness for SOC, ISO 27001 and international frameworks.',
@@ -189,7 +189,7 @@ const i18n = {
         'form.message': 'Message',
         'form.submit': 'Send Message',
         'footer.tagline': 'Cybersecurity & Compliance | ISO 27001 | SOC 2 | DevSecOps',
-        'footer.copyright': '© 2025 N ideas. All rights reserved.'
+        'footer.copyright': '© 2025 NIDEAS. All rights reserved.'
     }
 };
 
