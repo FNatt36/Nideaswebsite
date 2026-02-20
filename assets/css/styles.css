@@ -375,6 +375,13 @@ body {
     margin-bottom: 20px;
 }
 
+.client-logo img {
+    max-height: 40px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
 .client-name {
     font-size: 1.3rem;
     font-weight: 600;
